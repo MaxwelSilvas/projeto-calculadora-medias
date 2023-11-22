@@ -23,10 +23,10 @@ function adicionaLinha() {
   const inputNotaAtividade = document.getElementById("nota-atividade");
 
   if (atividades.includes(inputNomeAtividade.value)) {
-    alert(`A atividade: ${inputNotaAtividade.value} já foi inserida`);
+    alert(`A atividade: ${inputNomeAtividade.value} já foi inserida`);
   } else {
     atividades.push(inputNomeAtividade.value);
-    notas.push(parseFloat(inputNomeAtividade.value));
+    notas.push(parseFloat(inputNotaAtividade.value));
 
     let linha = "<tr>";
     linha += `<td>${inputNomeAtividade.value}</td>`;
